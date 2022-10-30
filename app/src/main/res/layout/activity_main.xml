@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="right"
+        android:layout_margin="20dp"
+        android:background="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlHardcoded" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_below="@id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+      <Button
+          android:id="@+id/btn1"
+          android:layout_weight="0.25"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:text="C"
+          android:textSize="30dp"
+          android:padding="5dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginLeft="10dp"
+          tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded,SpUsage" />
+        <Button
+            android:id="@+id/btn2"
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="/"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded,SpUsage" />
+        <Button
+            android:id="@+id/btn3"
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="%"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded,SpUsage" />
+        <Button
+            android:id="@+id/btn4"
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="C"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded,SpUsage" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_below="@id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="7"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded,SpUsage" />
+        <Button
+            android:id="@+id/btn6"
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="8"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded,SpUsage" />
+        <Button
+            android:id="@+id/btn7"
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="9"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded,SpUsage" />
+        <Button
+            android:id="@+id/btn8"
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="*"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded,SpUsage" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_below="@id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="4"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded,SpUsage" />
+        <Button
+            android:id="@+id/btn10"
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="5"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded,SpUsage" />
+        <Button
+            android:id="@+id/btn11"
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="6"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded,SpUsage" />
+        <Button
+            android:id="@+id/btn12"
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="-"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded,SpUsage" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_below="@id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn13"
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="4"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded,SpUsage" />
+        <Button
+            android:id="@+id/btn14"
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="5"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded,SpUsage" />
+
+        <Button
+            android:id="@+id/btn15"
+            android:layout_weight="0.50"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="="
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded,SpUsage" />
+
+    </LinearLayout>
+
+</RelativeLayout>
