@@ -95,10 +95,6 @@ public class MainActivity extends AppCompatActivity {
                     textView.setText(value1+value2+"");  // 11.0 + 22.0 = 33.0
                     addition=false;
                 }
-                if (subtraction){
-                    textView.setText(value1-value2+"");  // 11.0 + 22.0 = 33.0
-                    subtraction=false;
-                }
             }
         });
 
