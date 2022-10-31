@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
         textView=(TextView) findViewById(R.id.tv1);
 
-        //event listener
+        //event listener for button
         btnC.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
             @Override
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
-                textView.setText(textView.getText()+"1");
+                textView.setText(textView.getText()+"1");  // getText= previous text + 1
             }
         });
 
@@ -69,6 +69,8 @@ public class MainActivity extends AppCompatActivity {
                 textView.setText(textView.getText()+"2");
             }
         });
+
+        // Addition operation
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
             @Override
@@ -77,21 +79,25 @@ public class MainActivity extends AppCompatActivity {
                    textView.setText("");
                }
                else {
-                   value1=Float.parseFloat(textView.getText()+"");
+                   value1=Float.parseFloat(textView.getText()+""); //1st user given number value1 = 11.0
                    addition=true;
                    textView.setText(null);
                }
             }
         });
-
+        // Equal operation
         btnEqu.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
-                value2=Float.parseFloat(textView.getText()+"");
+                value2=Float.parseFloat(textView.getText()+"");  //2nd user num value2 = 22.0
                 if (addition){
-                    textView.setText(value1+value2+"");
+                    textView.setText(value1+value2+"");  // 11.0 + 22.0 = 33.0
                     addition=false;
+                }
+                if (subtraction){
+                    textView.setText(value1-value2+"");  // 11.0 + 22.0 = 33.0
+                    subtraction=false;
                 }
             }
         });
